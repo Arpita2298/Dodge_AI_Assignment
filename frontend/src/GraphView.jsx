@@ -21,7 +21,7 @@ export default function GraphView({ onNodeSelect }) {
   const [stats, setStats] = useState(null)
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/graph")
+    fetch("https://dodge-ai-assignment-v520.onrender.com/api/graph")
       .then(r => r.json())
       .then(data => {
         setStats(data.stats)

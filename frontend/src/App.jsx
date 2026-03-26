@@ -7,7 +7,7 @@ export default function App() {
   const [backendStatus, setBackendStatus] = useState("checking...")
 
   useEffect(() => {
-    fetch("http://localhost:8000/")
+    fetch("https://dodge-ai-assignment-v520.onrender.com")
       .then(r => r.json())
       .then(() => setBackendStatus("🟢 Connected"))
       .catch(() => setBackendStatus("🔴 Backend Offline"))

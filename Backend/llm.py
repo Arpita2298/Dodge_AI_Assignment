@@ -1,6 +1,11 @@
 from groq import Groq
 import sqlite3
 import os
+
+from dotenv import load_dotenv
+load_dotenv()
+
+
 from database import get_connection, get_table_info
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")  
